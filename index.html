@@ -1,0 +1,509 @@
+<!DOCTYPE html>
+<html lang="en-GB">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>8Aviation | Private Jet Charter from Biggin Hill &amp; London</title>
+<meta name="description" content="8Aviation — private jet charter from London Biggin Hill, Farnborough, Luton and Stansted. A diverse fleet from turboprops to ultra-long-range jets, 24/7, with 20 years' experience." />
+<link rel="canonical" href="https://charter-private-jet.com/" />
+<meta property="og:type" content="website" />
+<meta property="og:title" content="8Aviation | Private Jet Charter from Biggin Hill &amp; London" />
+<meta property="og:description" content="Private jet charter from London Biggin Hill — a diverse fleet from turboprops to ultra-long-range flagships, 24/7, with 20 years' experience." />
+<meta property="og:image" content="https://charter-private-jet.com/assets/hero.jpg" />
+<meta property="og:url" content="https://charter-private-jet.com/" />
+<meta name="twitter:card" content="summary_large_image" />
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,500;0,600;0,700;1,500&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --navy-950:#150c29; --navy-900:#1c1138; --navy-850:#241748; --navy-800:#2d1d58;
+    --navy-700:#39256c; --line:#4a3a76; --line-soft:#2a1b4e;
+    --gold:#cfd2de; --gold-light:#eef0f6; --gold-deep:#a8acbd;
+    --fg:#f1edfa; --muted:#bcb2d6; --muted-soft:#8a7fac;
+    --serif:"Cormorant Garamond",Georgia,"Times New Roman",serif;
+    --sans:"Inter",-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,sans-serif;
+  }
+  *{box-sizing:border-box;margin:0}
+  html{scroll-behavior:smooth}
+  body{background:var(--navy-950);color:var(--fg);font-family:var(--sans);line-height:1.6;-webkit-font-smoothing:antialiased}
+  a{color:inherit;text-decoration:none}
+  img,svg{display:block;max-width:100%}
+  .wrap{max-width:1120px;margin:0 auto;padding:0 22px}
+  .gold{color:var(--gold)}
+  .eyebrow{font-size:12px;letter-spacing:.32em;text-transform:uppercase;color:var(--gold);font-weight:600}
+  h1,h2,h3{font-family:var(--serif);font-weight:600;line-height:1.08;letter-spacing:.01em}
+  .btn{display:inline-flex;align-items:center;gap:9px;font-size:14px;font-weight:600;letter-spacing:.02em;
+    padding:14px 26px;border-radius:2px;cursor:pointer;border:1px solid transparent;transition:.18s;white-space:nowrap}
+  .btn-gold{background:var(--gold);color:var(--navy-950);border-color:var(--gold)}
+  .btn-gold:hover{background:var(--gold-light);border-color:var(--gold-light)}
+  .btn-ghost{background:transparent;color:var(--fg);border-color:rgba(207,210,222,.5)}
+  .btn-ghost:hover{border-color:var(--gold);color:var(--gold)}
+  .rule{width:56px;height:2px;background:var(--gold);margin:18px 0}
+
+  /* Header */
+  header{position:sticky;top:0;z-index:60;background:rgba(21,12,41,.82);backdrop-filter:blur(10px);border-bottom:1px solid var(--line-soft)}
+  .bar{display:flex;align-items:center;justify-content:space-between;height:74px;gap:20px}
+  .logo{font-family:var(--serif);font-size:26px;font-weight:700;letter-spacing:.02em;display:flex;align-items:center}
+  .logo .n8{color:var(--gold);font-size:30px;margin-right:2px}
+  .logo small{font-family:var(--sans);font-size:9px;letter-spacing:.34em;color:var(--muted);text-transform:uppercase;margin-left:12px;padding-left:12px;border-left:1px solid var(--line);align-self:center}
+  nav.main{display:flex;gap:30px}
+  nav.main a{font-size:14px;color:var(--muted);letter-spacing:.02em;transition:.15s}
+  nav.main a:hover{color:var(--gold)}
+  .hdr-cta{display:flex;align-items:center;gap:18px}
+  .hdr-phone{font-size:13px;color:var(--muted)}
+  .hdr-phone b{color:var(--fg);font-weight:600}
+  .burger{display:none;background:none;border:1px solid var(--line);border-radius:3px;padding:9px 11px;cursor:pointer}
+  .burger span{display:block;width:20px;height:2px;background:var(--gold);margin:4px 0}
+  @media(max-width:940px){nav.main,.hdr-phone,.hdr-cta .btn{display:none}.burger{display:block}}
+
+  /* Hero */
+  .hero{position:relative;overflow:hidden;border-bottom:1px solid var(--line-soft);
+    background:
+      linear-gradient(90deg, rgba(21,12,41,.94) 0%, rgba(21,12,41,.78) 42%, rgba(21,12,41,.45) 100%),
+      radial-gradient(120% 90% at 88% 0%, rgba(207,210,222,.16), transparent 55%),
+      url('assets/hero.jpg') center right / cover no-repeat, var(--navy-950)}
+  @media(max-width:760px){.hero{background:
+      linear-gradient(180deg, rgba(21,12,41,.86), rgba(21,12,41,.92)),
+      url('assets/hero.jpg') center / cover no-repeat, var(--navy-950)}}
+  .hero__inner{position:relative;z-index:2;padding:104px 0 92px;max-width:760px}
+  .hero h1{font-size:clamp(38px,5.8vw,66px);margin:18px 0 0}
+  .hero h1 em{font-style:italic;color:var(--gold-light)}
+  .hero__tag{font-family:var(--serif);font-style:italic;font-size:clamp(19px,2.4vw,25px);color:var(--gold-light);margin-top:14px}
+  .hero__lede{margin-top:18px;font-size:clamp(16px,2.1vw,19px);color:var(--muted);max-width:60ch}
+  .hero__cta{margin-top:38px;display:flex;flex-wrap:wrap;gap:14px}
+  .trust{margin-top:46px;display:flex;flex-wrap:wrap;gap:12px}
+  .trust span{font-size:12px;letter-spacing:.08em;text-transform:uppercase;color:var(--muted);
+    border:1px solid var(--line);border-radius:2px;padding:8px 13px;background:rgba(45,29,88,.4)}
+  .trust b{color:var(--gold)}
+
+  section{padding:88px 0;border-bottom:1px solid var(--line-soft)}
+  .sec-head{max-width:720px}
+  .sec-head h2{font-size:clamp(30px,4.4vw,46px);margin-top:14px}
+  .sec-head p{margin-top:16px;color:var(--muted);font-size:17px}
+
+  /* Mission */
+  .mission{background:linear-gradient(180deg,var(--navy-950),var(--navy-900))}
+  .mission__quote{font-family:var(--serif);font-style:italic;font-size:clamp(24px,3.6vw,38px);line-height:1.28;color:var(--fg);max-width:20ch;margin:0 auto;text-align:center}
+  .mission__quote span{color:var(--gold-light)}
+  .values{margin-top:52px;display:grid;grid-template-columns:repeat(5,1fr);gap:26px}
+  .value h3{font-size:19px;color:var(--gold);font-family:var(--sans);font-weight:600;letter-spacing:.01em}
+  .value p{margin-top:8px;font-size:14px;color:var(--muted)}
+  @media(max-width:860px){.values{grid-template-columns:repeat(2,1fr)}}
+  @media(max-width:520px){.values{grid-template-columns:1fr}}
+
+  /* Fleet */
+  .tier{margin-top:34px}
+  .tier__head{display:flex;align-items:baseline;justify-content:space-between;gap:16px;border-bottom:1px solid var(--line-soft);padding-bottom:14px}
+  .tier__head h3{font-size:24px}
+  .tier__head .k{font-size:12px;letter-spacing:.14em;text-transform:uppercase;color:var(--muted-soft)}
+  .tier--flag{background:linear-gradient(180deg,rgba(207,210,222,.08),transparent);border:1px solid rgba(207,210,222,.28);border-radius:5px;padding:26px;margin-top:8px}
+  .tier--flag .tier__head{border-color:rgba(207,210,222,.3)}
+  .tier--flag .flagtag{font-size:11px;letter-spacing:.18em;text-transform:uppercase;color:var(--navy-950);background:var(--gold);padding:4px 10px;border-radius:2px;font-weight:700}
+  .jets{margin-top:20px;display:grid;grid-template-columns:repeat(4,1fr);gap:14px}
+  .jet{border:1px solid var(--line-soft);border-radius:4px;padding:16px 16px 18px;background:rgba(45,29,88,.5);transition:.18s}
+  .jet:hover{border-color:rgba(207,210,222,.5);transform:translateY(-2px)}
+  .jet b{font-size:15px;color:var(--fg);font-weight:600}
+  .jet small{display:block;margin-top:5px;font-size:12px;color:var(--muted-soft);letter-spacing:.04em}
+  @media(max-width:860px){.jets{grid-template-columns:repeat(2,1fr)}}
+
+  /* Airports */
+  .airports{display:grid;grid-template-columns:1.4fr 1fr 1fr 1fr;gap:14px;margin-top:34px}
+  .apt{border:1px solid var(--line-soft);border-radius:4px;padding:22px;background:rgba(45,29,88,.5)}
+  .apt--primary{background:linear-gradient(160deg,rgba(28,17,56,.72),rgba(28,17,56,.9)),url('assets/biggin-hill-tower.jpg') center/cover;border-color:rgba(207,210,222,.55)}
+  .apt .code{font-family:var(--serif);font-size:30px;color:var(--gold)}
+  .apt h3{font-size:19px;font-family:var(--sans);font-weight:600;margin-top:6px}
+  .apt p{font-size:13px;color:var(--muted);margin-top:8px}
+  @media(max-width:860px){.airports{grid-template-columns:1fr 1fr}}
+  @media(max-width:520px){.airports{grid-template-columns:1fr}}
+
+  /* Why us */
+  .why{display:grid;grid-template-columns:repeat(3,1fr);gap:24px;margin-top:38px}
+  .feat{border-top:2px solid var(--gold);padding-top:20px}
+  .feat h3{font-size:20px;font-family:var(--sans);font-weight:600}
+  .feat p{margin-top:10px;color:var(--muted);font-size:15px}
+  @media(max-width:760px){.why{grid-template-columns:1fr}}
+
+  /* Photo elements */
+  .imgbanner{margin-top:34px;height:300px;border-radius:6px;border:1px solid var(--line-soft);
+    background-size:cover;background-position:center;position:relative;overflow:hidden}
+  .imgbanner::after{content:"";position:absolute;inset:0;background:linear-gradient(180deg,rgba(21,12,41,.15),rgba(21,12,41,.55))}
+  @media(max-width:640px){.imgbanner{height:200px}}
+  .photoband{position:relative;padding:120px 0;border-bottom:1px solid var(--line-soft);
+    background-size:cover;background-position:center;background-attachment:fixed}
+  .photoband .wrap{position:relative;z-index:2}
+  .photoband .eyebrow{color:var(--gold-light)}
+  .photoband h2{font-size:clamp(28px,4vw,44px);margin-top:14px;max-width:18ch}
+  .photoband p{margin-top:14px;color:var(--fg);max-width:52ch;font-size:17px}
+  @media(max-width:760px){.photoband{padding:80px 0;background-attachment:scroll}}
+
+  /* FAQ */
+  .faq{margin-top:34px;border:1px solid var(--line-soft);border-radius:5px;overflow:hidden}
+  .faq details{border-bottom:1px solid var(--line-soft);background:rgba(45,29,88,.4)}
+  .faq details:last-child{border-bottom:none}
+  .faq summary{cursor:pointer;list-style:none;padding:18px 20px;display:flex;align-items:center;gap:14px;font-weight:600;font-size:16px;color:var(--fg)}
+  .faq summary::-webkit-details-marker{display:none}
+  .faq summary .plus{margin-left:auto;color:var(--gold);font-size:22px;line-height:1;transition:transform .2s}
+  .faq details[open] summary .plus{transform:rotate(45deg)}
+  .faq .a{padding:0 20px 20px;color:var(--muted);font-size:15px;max-width:80ch}
+
+  /* Enquiry */
+  .enquire{background:linear-gradient(180deg,rgba(21,12,41,.94),rgba(21,12,41,.965)),url('assets/operations.jpg') center/cover;background-attachment:fixed}
+  .form-grid{display:grid;grid-template-columns:1fr 1fr;gap:16px;margin-top:32px}
+  .field label{display:block;font-size:12px;letter-spacing:.1em;text-transform:uppercase;color:var(--muted);margin-bottom:7px}
+  .field input,.field select{width:100%;background:var(--navy-950);border:1px solid var(--line);border-radius:3px;color:var(--fg);
+    padding:13px 14px;font-size:15px;font-family:var(--sans);outline:none;transition:.15s}
+  .field input:focus,.field select:focus{border-color:var(--gold);box-shadow:0 0 0 2px rgba(207,210,222,.18)}
+  .field--full{grid-column:1/-1}
+  .form-actions{grid-column:1/-1;display:flex;flex-wrap:wrap;gap:12px;margin-top:6px}
+  .err{grid-column:1/-1;color:#e9b64b;font-size:13px;min-height:18px}
+  @media(max-width:640px){.form-grid{grid-template-columns:1fr}}
+
+  /* Footer */
+  footer{padding:60px 0 40px;background:var(--navy-950)}
+  .foot-grid{display:grid;grid-template-columns:2fr 1fr 1fr;gap:36px}
+  .foot-grid h4{font-size:12px;letter-spacing:.16em;text-transform:uppercase;color:var(--gold);margin-bottom:14px}
+  .foot-grid a,.foot-grid li{display:block;color:var(--muted);font-size:14px;margin-bottom:8px;list-style:none}
+  .foot-grid a:hover{color:var(--gold)}
+  .foot-bottom{margin-top:44px;padding-top:22px;border-top:1px solid var(--line-soft);display:flex;flex-wrap:wrap;justify-content:space-between;gap:10px;color:var(--muted-soft);font-size:12.5px}
+  .ph-note{color:#e9b64b;font-size:11.5px}
+  @media(max-width:760px){.foot-grid{grid-template-columns:1fr 1fr}}
+
+  /* Mobile menu + call bar */
+  .mmenu{display:none;position:fixed;inset:74px 0 auto 0;z-index:55;background:var(--navy-900);border-bottom:1px solid var(--line);padding:14px 22px}
+  .mmenu.open{display:block}
+  .mmenu a{display:block;padding:12px 0;color:var(--fg);border-bottom:1px solid var(--line-soft)}
+  .callbar{position:fixed;left:0;right:0;bottom:0;z-index:60;display:none;gap:10px;padding:10px 14px;background:rgba(21,12,41,.96);border-top:1px solid var(--line)}
+  .callbar a{flex:1;text-align:center}
+  @media(max-width:940px){.callbar{display:flex}body{padding-bottom:70px}}
+  .logo-img{height:44px;width:auto;display:block;background:#fff;padding:6px 10px;border-radius:8px}
+</style>
+<script type="application/ld+json">
+{
+  "@context":"https://schema.org",
+  "@type":"LocalBusiness",
+  "@id":"https://charter-private-jet.com/#business",
+  "name":"8Aviation",
+  "url":"https://charter-private-jet.com/",
+  "image":"https://charter-private-jet.com/assets/hero.jpg",
+  "description":"Private jet charter from London Biggin Hill, Farnborough, Luton and Stansted. A diverse fleet from turboprops to ultra-long-range jets, available 24/7, with 20 years' experience.",
+  "email":"charter@charter-private-jet.com",
+  "priceRange":"£££££",
+  "areaServed":[
+    {"@type":"City","name":"London"},
+    {"@type":"Place","name":"London Biggin Hill Airport"},
+    {"@type":"Place","name":"Farnborough Airport"},
+    {"@type":"Place","name":"London Luton Airport"},
+    {"@type":"Place","name":"London Stansted Airport"},
+    {"@type":"Country","name":"United Kingdom"}
+  ],
+  "openingHoursSpecification":{"@type":"OpeningHoursSpecification","dayOfWeek":["Monday","Tuesday","Wednesday","Thursday","Friday","Saturday","Sunday"],"opens":"00:00","closes":"23:59"},
+  "knowsAbout":["Private jet charter","Private jet hire","Ultra long range jet charter","Business aviation","Private jet Biggin Hill","Private jet Farnborough"]
+}
+</script>
+<script type="application/ld+json">
+{
+  "@context":"https://schema.org",
+  "@type":"Service",
+  "name":"Private Jet Charter",
+  "serviceType":"Private jet charter",
+  "provider":{"@id":"https://charter-private-jet.com/#business"},
+  "areaServed":{"@type":"City","name":"London"},
+  "description":"On-demand private jet charter from London Biggin Hill, Farnborough, Luton and Stansted — turboprops to ultra-long-range jets, arranged 24/7.",
+  "url":"https://charter-private-jet.com/"
+}
+</script>
+<script type="application/ld+json">
+{
+  "@context":"https://schema.org",
+  "@type":"FAQPage",
+  "mainEntity":[
+    {"@type":"Question","name":"How much does it cost to charter a private jet from Biggin Hill?","acceptedAnswer":{"@type":"Answer","text":"The cost of a private jet charter depends on the aircraft, route, flight time and number of passengers. A light jet for a short European hop costs far less than an ultra-long-range flight to the USA. Every 8Aviation quote is fixed and tailored to your journey; our 24-hour team responds promptly with options and a price."}},
+    {"@type":"Question","name":"Can I charter a private jet from Farnborough, Luton or Stansted?","acceptedAnswer":{"@type":"Answer","text":"Yes. Biggin Hill is our home base, but we arrange private jet charter from Farnborough, Luton and Stansted, and from any suitable airport across the UK, Europe and worldwide."}},
+    {"@type":"Question","name":"How quickly can you arrange a private jet from London?","acceptedAnswer":{"@type":"Answer","text":"Our operations desk runs 24 hours a day. Private jet charter can often be arranged at short notice, including same-day departures, subject to aircraft and crew availability."}},
+    {"@type":"Question","name":"What size of private jet can I charter?","acceptedAnswer":{"@type":"Answer","text":"A full range — from turboprops (King Air 250, Pilatus PC-12) and light jets (Citation CJ1, M2, CJ2+, Phenom 300E), through midsize jets (Citation XLS+, Sovereign+), to ultra-long-range aircraft (Gulfstream G650, Global 7500, 6000 and Express XRS)."}},
+    {"@type":"Question","name":"Do you operate the aircraft, or broker them?","acceptedAnswer":{"@type":"Answer","text":"Both. 8Aviation flies operated and managed aircraft, and also brokers flights from a carefully selected group of operators worked with over many years."}},
+    {"@type":"Question","name":"Is 8Aviation available 24 hours a day?","acceptedAnswer":{"@type":"Answer","text":"Yes. Our operations team answers around the clock for quotes, changes and last-minute departures, every day of the year."}}
+  ]
+}
+</script>
+</head>
+<body>
+
+<header>
+  <div class="wrap bar">
+    <a class="logo" href="#top" aria-label="8Aviation home"><img src="assets/logo.jpg" alt="8Aviation Private Jet Charter" class="logo-img"></a>
+    <nav class="main">
+      <a href="/fleet.html">Fleet</a>
+      <a href="/private-jet-biggin-hill.html">Biggin Hill</a>
+      <a href="/private-jet-farnborough.html">Farnborough</a>
+      <a href="/blog.html">Blog</a>
+      <a href="#enquire">Contact</a>
+    </nav>
+    <div class="hdr-cta">
+      <span class="hdr-phone">24/7 Ops · <b id="phoneHdr">+44 (0)20 XXXX XXXX</b></span>
+      <a class="btn btn-gold" href="#enquire">Request a Quote</a>
+    </div>
+    <button class="burger" id="burger" aria-label="Menu"><span></span><span></span><span></span></button>
+  </div>
+  <div class="mmenu" id="mmenu">
+    <a href="/fleet.html">Fleet</a><a href="/private-jet-biggin-hill.html">Biggin Hill</a><a href="/private-jet-farnborough.html">Farnborough</a>
+    <a href="/blog.html">Blog</a><a href="#enquire">Contact</a>
+  </div>
+</header>
+
+<!-- HERO -->
+<section class="hero" id="top" style="border-bottom:none">
+  <div class="wrap hero__inner">
+    <p class="eyebrow">Biggin Hill · Farnborough · Luton · Stansted</p>
+    <h1>Private jet charter from <em>Biggin Hill &amp; London.</em></h1>
+    <p class="hero__tag">Effortless. Human. Always on.</p>
+    <p class="hero__lede">On-demand private jet charter from London Biggin Hill, Farnborough, Luton and Stansted — a diverse fleet from turboprops to ultra-long-range flagships, arranged by a team that treats every flight as if it were their only one.</p>
+    <div class="hero__cta">
+      <a class="btn btn-gold" href="#enquire">Request a Quote</a>
+      <a class="btn btn-ghost" href="#fleet">Explore the Fleet</a>
+    </div>
+    <div class="trust">
+      <span><b>20</b> Years' Experience</span>
+      <span><b>24/7</b> Operations</span>
+      <span>London <b>Biggin Hill</b></span>
+      <span>Operated · Managed · Brokered</span>
+      <span>Door-to-door <b>Chauffeurs</b></span>
+    </div>
+  </div>
+</section>
+
+<!-- MISSION -->
+<section class="mission" id="mission">
+  <div class="wrap" style="text-align:center">
+    <p class="eyebrow">Our Ethos</p>
+    <div class="rule" style="margin:18px auto"></div>
+    <p class="mission__quote">To make private aviation effortless and human — pairing twenty years of expertise with a genuine <span>duty of care</span>, so every client, on every flight, is looked after as though they were our only one.</p>
+    <div class="values">
+      <div class="value"><h3>Safety First</h3><p>The first, non-negotiable priority on every flight.</p></div>
+      <div class="value"><h3>Always On</h3><p>A 24-hour team that answers, whatever the hour.</p></div>
+      <div class="value"><h3>Relationships</h3><p>Long-standing partners and repeat clients who trust us.</p></div>
+      <div class="value"><h3>Precision</h3><p>Every detail handled, from the aircraft to the apron.</p></div>
+      <div class="value"><h3>Honesty</h3><p>The right aircraft for the mission — never the biggest invoice.</p></div>
+    </div>
+  </div>
+</section>
+
+<!-- FLEET -->
+<section id="fleet">
+  <div class="wrap">
+    <div class="sec-head">
+      <p class="eyebrow">The Fleet</p>
+      <h2>The right aircraft for the mission.</h2>
+      <p>From cost-effective turboprops to intercontinental flagships — drawn from our own operated and managed aircraft, and a carefully selected group of operators we've flown with for years.</p>
+    </div>
+
+    <div class="imgbanner" role="img" aria-label="Private jets on the apron at London Biggin Hill" style="background-image:url('assets/fleet-apron.jpg')"></div>
+
+    <div class="tier tier--flag">
+      <div class="tier__head">
+        <div><span class="flagtag">Our Specialism</span><h3 style="margin-top:12px">Ultra-Long-Range</h3></div>
+        <span class="k">Intercontinental · Non-stop</span>
+      </div>
+      <div class="jets">
+        <div class="jet"><b>Gulfstream G650</b><small>Ultra-long-range flagship</small></div>
+        <div class="jet"><b>Global 7500</b><small>Longest range, large cabin</small></div>
+        <div class="jet"><b>Global 6000</b><small>Intercontinental comfort</small></div>
+        <div class="jet"><b>Global Express XRS</b><small>Proven long-haul performer</small></div>
+      </div>
+    </div>
+
+    <div class="tier">
+      <div class="tier__head"><h3>Midsize Jets</h3><span class="k">Longer European sectors · Stand-up cabin</span></div>
+      <div class="jets">
+        <div class="jet"><b>Citation XLS+</b><small>Midsize benchmark</small></div>
+        <div class="jet"><b>Citation Sovereign+</b><small>Range &amp; cabin comfort</small></div>
+      </div>
+    </div>
+
+    <div class="tier">
+      <div class="tier__head"><h3>Light Jets</h3><span class="k">Efficient short &amp; mid hops</span></div>
+      <div class="jets">
+        <div class="jet"><b>Citation CJ1</b><small>Light, agile, efficient</small></div>
+        <div class="jet"><b>Citation M2</b><small>Refined light jet</small></div>
+        <div class="jet"><b>Citation CJ2+</b><small>Extra range &amp; space</small></div>
+        <div class="jet"><b>Phenom 300E</b><small>Class-leading performance</small></div>
+      </div>
+    </div>
+
+    <div class="tier">
+      <div class="tier__head"><h3>Turboprops</h3><span class="k">Short legs · Shorter runways · Cost-effective</span></div>
+      <div class="jets">
+        <div class="jet"><b>King Air 250</b><small>Versatile twin turboprop</small></div>
+        <div class="jet"><b>Pilatus PC-12</b><small>Rugged, spacious, efficient</small></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- AIRPORTS -->
+<section id="airports">
+  <div class="wrap">
+    <div class="sec-head">
+      <p class="eyebrow">London Airports</p>
+      <h2>Private jet charter from every London airport.</h2>
+      <p>Biggin Hill is London's dedicated business-aviation airport — swift, private and close to the city. We also arrange private jet charter from Farnborough, Luton and Stansted, and from wherever suits you across the UK. Whichever airport works best, 8Aviation is your private jet London specialist.</p>
+    </div>
+    <div class="airports">
+      <a class="apt apt--primary" href="/private-jet-biggin-hill.html"><span class="code">BQH</span><h3>Private Jet Biggin Hill</h3><p>Our home base. Private jet charter from London Biggin Hill, with fast, discreet handling into central London. →</p></a>
+      <a class="apt" href="/private-jet-farnborough.html"><span class="code">FAB</span><h3>Private Jet Farnborough</h3><p>Private jet charter from Farnborough, London's premier business-aviation airport to the south-west. →</p></a>
+      <div class="apt"><span class="code">LTN</span><h3>Private Jet Luton</h3><p>Private jet charter from Luton, an established business-aviation terminal north of London.</p></div>
+      <div class="apt"><span class="code">STN</span><h3>Private Jet Stansted</h3><p>Private jet charter from Stansted, with full business-aviation handling to the north-east.</p></div>
+    </div>
+  </div>
+</section>
+
+<!-- BAND: door to door -->
+<section class="photoband" style="background-image:linear-gradient(90deg,rgba(21,12,41,.92),rgba(21,12,41,.5)),url('assets/door-to-door.jpg')">
+  <div class="wrap">
+    <p class="eyebrow">Door to Door</p>
+    <h2>From your door to the aircraft — and beyond.</h2>
+    <p>In-house chauffeurs and ground transport meet you landside and deliver you to the steps — with the same standard of care extended across Europe and the USA through partners we've worked with for years.</p>
+    <a class="btn btn-gold" href="#enquire" style="margin-top:24px">Request a Quote</a>
+  </div>
+</section>
+
+<!-- WHY -->
+<section id="why">
+  <div class="wrap">
+    <div class="sec-head"><p class="eyebrow">Why 8Aviation</p><h2>Twenty years. One standard.</h2></div>
+    <div class="why">
+      <div class="feat"><h3>A proven track record</h3><p>Two decades arranging private flights, with a record built on reliability and repeat clients rather than promises.</p></div>
+      <div class="feat"><h3>24-hour operations</h3><p>Real people on the phone around the clock — quotes, changes and last-minute departures, whatever the hour.</p></div>
+      <div class="feat"><h3>Door-to-door</h3><p>In-house chauffeurs and ground transport, extended across Europe and the USA through partners we've worked with for years.</p></div>
+      <div class="feat"><h3>Choice, done right</h3><p>Operated, managed and carefully brokered aircraft — so you get the right jet for the mission, not just what's on one fleet list.</p></div>
+      <div class="feat"><h3>Safety, without compromise</h3><p>Fully insured aircraft flown by type-rated crews, to strict regulatory standards.</p></div>
+      <div class="feat"><h3>Genuine care</h3><p>Every detail considered, every journey handled personally. It's the difference you feel before you fly.</p></div>
+    </div>
+  </div>
+</section>
+
+<!-- BAND: the experience -->
+<section class="photoband" style="background-image:linear-gradient(90deg,rgba(21,12,41,.9),rgba(21,12,41,.5)),url('assets/experience.jpg')">
+  <div class="wrap">
+    <p class="eyebrow">The Experience</p>
+    <h2>Time returned. The journey, elevated.</h2>
+    <p>Private terminals, no queues, and a cabin that's yours alone — so you arrive rested, on your own schedule, ready for whatever comes next.</p>
+  </div>
+</section>
+
+<!-- FAQ -->
+<section id="faq">
+  <div class="wrap">
+    <div class="sec-head"><p class="eyebrow">Questions</p><h2>Private jet charter, answered.</h2></div>
+    <div class="faq">
+      <details><summary><span>How much does it cost to charter a private jet from Biggin Hill?</span><span class="plus">+</span></summary><p class="a">The cost of a private jet charter depends on the aircraft, the route, flight time and the number of passengers — a light jet for a short European hop costs far less than an ultra-long-range flight to the USA. Every 8Aviation quote is fixed and tailored to your journey. Send your requirement and our 24-hour team will respond promptly with options and a price.</p></details>
+      <details><summary><span>Can I charter a private jet from Farnborough, Luton or Stansted?</span><span class="plus">+</span></summary><p class="a">Yes. Biggin Hill is our home base, but we arrange private jet charter from Farnborough, Luton and Stansted, and from any suitable airport across the UK, Europe and worldwide — whichever is fastest and most convenient for you.</p></details>
+      <details><summary><span>How quickly can you arrange a private jet from London?</span><span class="plus">+</span></summary><p class="a">Our operations desk runs 24 hours a day. Private jet charter can often be arranged at short notice, including same-day departures, subject to aircraft and crew availability. For the best choice of aircraft and pricing, the earlier you enquire the better.</p></details>
+      <details><summary><span>What size of private jet can I charter?</span><span class="plus">+</span></summary><p class="a">A full range — from cost-effective turboprops (King Air 250, Pilatus PC-12) and light jets (Citation CJ1, M2, CJ2+, Phenom 300E), through midsize jets (Citation XLS+, Sovereign+), to our ultra-long-range specialism (Gulfstream G650, Global 7500, 6000 and Express XRS). We match the aircraft to your route, passengers and budget.</p></details>
+      <details><summary><span>Do you operate the aircraft, or broker them?</span><span class="plus">+</span></summary><p class="a">Both. 8Aviation flies operated and managed aircraft, and also brokers flights from a carefully selected group of operators we have worked with for many years. That means you get the right aircraft for the mission, from a trusted circle — not an open marketplace.</p></details>
+      <details><summary><span>Is 8Aviation available 24 hours a day?</span><span class="plus">+</span></summary><p class="a">Yes. Our operations team answers around the clock — for quotes, changes and last-minute departures — every day of the year.</p></details>
+    </div>
+  </div>
+</section>
+
+<!-- ENQUIRE -->
+<section class="enquire" id="enquire">
+  <div class="wrap" style="max-width:820px">
+    <div class="sec-head" style="text-align:center;margin:0 auto">
+      <p class="eyebrow">Request a Quote</p>
+      <h2>Tell us your journey.</h2>
+      <p style="margin-left:auto;margin-right:auto">Send your requirement and our 24-hour operations team will respond promptly with tailored aircraft options and a price. No obligation.</p>
+    </div>
+    <form id="quoteForm" style="margin-top:8px" novalidate>
+      <div class="form-grid">
+        <div class="field"><label>Depart from</label><input id="from" placeholder="e.g. London Biggin Hill"></div>
+        <div class="field"><label>Destination</label><input id="to" placeholder="e.g. Nice, New York…"></div>
+        <div class="field"><label>Departure date</label><input id="date" type="date"></div>
+        <div class="field"><label>Passengers</label><input id="pax" type="number" min="1" value="2"></div>
+        <div class="field field--full"><label>Aircraft preference</label>
+          <select id="cls">
+            <option value="No preference">No preference — advise me</option>
+            <option>Ultra-long-range</option><option>Midsize jet</option><option>Light jet</option><option>Turboprop</option>
+          </select></div>
+        <div class="field"><label>Your name</label><input id="name" placeholder="Full name"></div>
+        <div class="field"><label>Phone</label><input id="phone" placeholder="For a fast callback"></div>
+        <div class="field field--full"><label>Email</label><input id="email" type="email" placeholder="you@email.com"></div>
+        <p class="err" id="err"></p>
+        <div class="form-actions">
+          <button type="button" class="btn btn-gold" onclick="sendEmail()">Send Enquiry</button>
+          <button type="button" class="btn btn-ghost" onclick="sendWhatsApp()">Enquire on WhatsApp</button>
+        </div>
+      </div>
+    </form>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer>
+  <div class="wrap">
+    <div class="foot-grid">
+      <div>
+        <a class="logo" href="#top" style="font-size:24px"><span class="n8">8</span>Aviation</a>
+        <p style="margin-top:16px;color:var(--muted);max-width:36ch;font-size:14px">Private jet charter from London Biggin Hill, Farnborough, Luton and Stansted. Operated, managed and carefully brokered aircraft, 24 hours a day.</p>
+      </div>
+      <div>
+        <h4>Explore</h4>
+        <a href="/fleet.html">The Fleet</a><a href="/private-jet-biggin-hill.html">Private Jet Biggin Hill</a><a href="/private-jet-farnborough.html">Private Jet Farnborough</a><a href="/blog.html">Blog &amp; News</a><a href="#enquire">Request a Quote</a>
+      </div>
+      <div>
+        <h4>Contact · 24/7</h4>
+        <a id="phoneFoot" href="#">+44 (0)20 XXXX XXXX</a>
+        <a id="waFoot" href="#">WhatsApp us</a>
+        <a id="emailFoot" href="#">charter@charter-private-jet.com</a>
+        <p class="ph-note">Phone &amp; WhatsApp are placeholders — to be confirmed.</p>
+      </div>
+    </div>
+    <div class="foot-bottom">
+      <span>© <span id="yr">2026</span> 8Aviation · charter-private-jet.com · All rights reserved.</span>
+      <span>Operated, managed &amp; brokered aircraft · Fully insured · Type-rated crews</span>
+    </div>
+  </div>
+</footer>
+
+<div class="callbar">
+  <a class="btn btn-ghost" href="#enquire">Request a Quote</a>
+  <a class="btn btn-gold" id="waBar" href="#">WhatsApp</a>
+</div>
+
+<script>
+  /* ---- Placeholder contact config — SWAP THESE when confirmed ---- */
+  var EMAIL = "charter@charter-private-jet.com";
+  var PHONE_DISPLAY = "+44 (0)20 XXXX XXXX";   // placeholder
+  var PHONE_TEL = "";                           // e.g. "+442012345678"
+  var WHATSAPP = "";                            // e.g. "447000000000"
+
+  document.getElementById('yr').textContent = new Date().getFullYear();
+  // wire contact links (fall back gracefully while placeholders)
+  var emailFoot=document.getElementById('emailFoot'); emailFoot.textContent=EMAIL; emailFoot.href="mailto:"+EMAIL;
+  var phoneFoot=document.getElementById('phoneFoot'); phoneFoot.textContent=PHONE_DISPLAY; if(PHONE_TEL) phoneFoot.href="tel:"+PHONE_TEL;
+  document.getElementById('phoneHdr').textContent=PHONE_DISPLAY;
+  if(WHATSAPP){ ['waFoot','waBar'].forEach(function(id){document.getElementById(id).href="https://wa.me/"+WHATSAPP;}); }
+
+  // mobile menu
+  var burger=document.getElementById('burger'), mmenu=document.getElementById('mmenu');
+  burger.addEventListener('click',function(){mmenu.classList.toggle('open');});
+  mmenu.querySelectorAll('a').forEach(function(a){a.addEventListener('click',function(){mmenu.classList.remove('open');});});
+
+  // enquiry form -> email / whatsapp
+  function gather(){var g=function(id){return (document.getElementById(id).value||'').trim();};
+    return {from:g('from'),to:g('to'),date:g('date'),pax:g('pax'),cls:document.getElementById('cls').value,name:g('name'),phone:g('phone'),email:g('email')};}
+  function validate(d){var m=[];if(!d.from)m.push('Depart from');if(!d.to)m.push('Destination');if(!d.name)m.push('Name');if(!d.email&&!d.phone)m.push('Email or phone');return m;}
+  function body(d){return ['PRIVATE JET CHARTER ENQUIRY','----------------------------------------',
+    'Route:        '+d.from+'  to  '+d.to,'Departure:    '+(d.date||'TBC'),'Passengers:   '+d.pax,
+    'Aircraft:     '+d.cls,'','Name:         '+d.name,'Phone:        '+d.phone,'Email:        '+d.email,
+    '----------------------------------------','Sent from charter-private-jet.com'].join('\n');}
+  function show(m){var e=document.getElementById('err');e.textContent=m.length?('Please add: '+m.join(', ')+'.'):'';return !m.length;}
+  function sendEmail(){var d=gather();if(!show(validate(d)))return;
+    window.location.href="mailto:"+EMAIL+"?subject="+encodeURIComponent('Charter enquiry: '+d.from+' to '+d.to)+"&body="+encodeURIComponent(body(d));}
+  function sendWhatsApp(){var d=gather();if(!show(validate(d)))return;
+    if(!WHATSAPP){document.getElementById('err').textContent='WhatsApp number to be confirmed — please use Send Enquiry for now.';return;}
+    window.open("https://wa.me/"+WHATSAPP+"?text="+encodeURIComponent(body(d)),"_blank");}
+</script>
+</body>
+</html>

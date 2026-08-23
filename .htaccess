@@ -1,0 +1,22 @@
+# ==========================================================================
+#  charter-private-jet.com — canonical host + HTTPS enforcement
+#  Consolidates all four URL variants to ONE canonical address in a single hop:
+#     http://charter-private-jet.com/       ─┐
+#     https://www.charter-private-jet.com/   ├─►  https://charter-private-jet.com/
+#     http://www.charter-private-jet.com/    ─┘   (matches the canonical tags; path & query preserved)
+# ==========================================================================
+
+RewriteEngine On
+
+# Force HTTPS + non-www in a single 301 (fires if not HTTPS OR on the www host)
+RewriteCond %{HTTPS} off [OR]
+RewriteCond %{HTTP_HOST} ^www\.charter-private-jet\.com$ [NC]
+RewriteRule ^ https://charter-private-jet.com%{REQUEST_URI} [R=301,L]
+
+# Clean default document
+DirectoryIndex index.html
+
+# Optional: once SSL is confirmed working, browsers will always use HTTPS
+<IfModule mod_headers.c>
+  Header always set Strict-Transport-Security "max-age=15552000"
+</IfModule>

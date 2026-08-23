@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://charter-private-jet.com/sitemap.xml
