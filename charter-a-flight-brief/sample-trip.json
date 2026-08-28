@@ -1,0 +1,44 @@
+{
+  "trip_number": "00000000",
+  "subtitle": "ROTARY WING / PASSENGER TRANSFER",
+  "dtg": "011200L JAN 26",
+  "issued": "31 DEC 25",
+  "situation": [
+    "Private rotary-wing passenger transfer tasked by CHARTER-A LTD operations.",
+    "Single sector, day VFR, two (2) passengers. All timings LOCAL (UTC+0)."
+  ],
+  "mission": [
+    "Lift two (2) PAX from EXAMPLE AIRPORT and deliver to EXAMPLE MANOR HLS",
+    "(EXAMPLESHIRE), landing not later than 1230L, 01 JAN 26."
+  ],
+  "timings": [
+    { "event": "PAX RV / CHECK-IN", "location": "EXAMPLE FBO, EXX", "time": "PRIOR 1200", "remarks": "SEE SER 6" },
+    { "event": "WHEELS UP", "location": "EXAMPLE AIRPORT", "time": "1200", "remarks": "DEP" },
+    { "event": "WHEELS DOWN", "location": "EXAMPLE MANOR HLS", "time": "1230", "remarks": "ARR" }
+  ],
+  "execution_notes": [
+    "ENROUTE TIME: 00:30.  ROUTE: EXAMPLE >>> EXAMPLE MANOR (DIRECT, WX PERMITTING)."
+  ],
+  "aircraft": {
+    "type": "Leonardo AW109 Trekker (twin-engine helicopter)",
+    "registration": "G-XXXX",
+    "crew_note": "TWO (2) — SEE SERIAL 5"
+  },
+  "manifest_label": "Example Airport to Example Manor",
+  "passengers": [
+    { "name": "Jane Example", "dob": "01 JAN 1970", "passport": "X0000000 (GBR) — EXPIRES 01 JAN 2030" },
+    { "name": "John Example" }
+  ],
+  "crew": [
+    ["Pilot (P1)", "Sam Samplepilot"],
+    ["2nd Crew", "Chris Crewman"]
+  ],
+  "handling": {
+    "agent": "Example Handling, Example Airport",
+    "telephone": "+44 00 0000 0000",
+    "email": "ops@example-handling.com"
+  },
+  "requested": "30 DEC 25",
+  "amended": "31 DEC 25",
+  "authorised_by": "M. Zaiger, Charter-A Ltd"
+}
