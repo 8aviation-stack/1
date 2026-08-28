@@ -1,77 +1,68 @@
 # SEO Audit — charter-a.com/private-jet-charter/pet-travel/
 
 **Project:** Improve the pet travel page and the charter-a.com domain's pet-flight topical authority.
-**Date:** 28 August 2026
-**Method note:** charter-a.com is blocked by this session's network egress proxy, so this audit was built from search-engine-indexed data (titles, descriptions, indexed copy) rather than a live crawl. Findings marked ⚠ should be re-verified against the live page before acting.
+**Date:** 28 August 2026 (v2 — verified against full live page source supplied by the owner; the v1 caveats are resolved)
 
 ---
 
-## 1. What the page is today
+## 1. What the page is today (verified)
 
 | Element | Current state |
 |---|---|
 | URL | `/private-jet-charter/pet-travel/` (good: sits under the commercial /private-jet-charter/ hub) |
-| Title tag | `Private Jet Pet Flight ▷ Dogs ▷ Cats ▷ Charter-A Ltd` |
-| Core message | Pets fly in the cabin, never the hold — jets, helicopters and air taxis |
-| Compliance copy | EU pet passport (or GB-issued before 1 Jan 2021); DEFRA-approved airport needed for UK arrivals; microchip + rabies + 21 days for EU entry |
-| Structured data | ⚠ None detected in indexed data (no FAQPage / Service schema) |
+| Title tag | `Private Jet Pet Flights Charter-A Ltd` |
+| Meta description | Auto-generated from page copy, ~300 chars, cut off mid-sentence: "…guide you through the pet" |
+| H1 | `Private Jet Pet Flights` — immediately followed by an **H2 with identical text** |
+| Heading structure | H1 → duplicate H2 → then jumps to **H5s** ("Flying your pet into the UK.", "Flying your pet into Europe…"). No keyword-bearing H2/H3s |
+| Schema | BreadcrumbList, WebPage, WebSite + **two conflicting Organization blocks** (AIOSEO: tel +441737823733; a second HFCM-injected block: tel +44 20 7781 8094, different email/logo). **No Service or FAQPage schema** |
+| Freshness | datePublished 2014, **dateModified 2022-09-22** — four years stale, and the copy still carries "COVID19 safe travel flights / Deep cleaned aircraft" bullets |
+| AIOSEO | **Focus keyphrase is empty**; headline score 46 |
+| CTA | One inline text link ("private jet quote" → /contact). No prominent quote CTA on the page itself |
+| Hero image | `dog-on-private-jet-scaled.gif` — a 2560px **GIF** as the LCP element (heavy; convert to WebP/JPG) |
 
-## 2. Critical issues
+## 2. Critical issues (verified)
 
-### 2.1 Title tag is the weakest link
-`Private Jet Pet Flight ▷ Dogs ▷ Cats ▷ Charter-A Ltd`
+### 2.1 The site's own internal links crown the WRONG pet page
+This is now the single biggest finding. On every page of the site:
 
-- **"Pet flight" is not the money term.** Every major competitor titles on *pet friendly private jet charter* (VistaJet, K9 Jets, Mercury Jets, Global Charter, Atlas, Charter Wind). That phrase carries the transactional "charter" modifier — the searcher ready to book.
-- **▷ symbols** read as dated/spammy, waste pixel width, and depress CTR against clean competitor titles. Google frequently rewrites titles containing them, so you lose control of the SERP snippet.
-- No location signal (UK/London) despite UK arrivals being the page's strongest differentiator.
+- The main nav item **"Pets on private jets"** links to `/pet-flights/` — not this page.
+- The site-wide footer banner **"FLY WITH YOUR PET"** button links to `/pet-flights/` — not this page.
 
-**Recommended:** `Pet Friendly Private Jet Charter | Fly With Your Dog in the Cabin | Charter-A`
-(If too long for the CMS: `Pet Friendly Private Jet Charter UK | Charter-A Ltd`)
+So the domain's entire internal link equity for pet queries flows to `/pet-flights/`, while `/private-jet-charter/pet-travel/` (the page in the commercial hub, the one this project targets) is orphaned apart from breadcrumbs. Google is being told `/pet-flights/` is the pillar.
 
-### 2.2 Keyword cannibalization — four pages compete for the same terms
-Indexed pet pages on the domain:
+**Fix:** point both the nav item and the footer button at `/private-jet-charter/pet-travel/`, then **301 `/pet-flights/` → `/private-jet-charter/pet-travel/`** (AIOSEO Pro → Redirects). Also retitle `/private-jet-dogs/` as a gallery and keep `/can-i-take-my-dog-on-a-private-jet/` as a long-tail Q&A post, both linking to the pillar with the anchor *pet friendly private jet charter*.
 
-| URL | Indexed title | Role today |
-|---|---|---|
-| `/private-jet-charter/pet-travel/` | Private Jet Pet Flight ▷ Dogs ▷ Cats | Service page (this project's target) |
-| `/pet-flights/` | Pet Flights by Private Jet: Charter-A Ltd — Travel in 2025 | Near-duplicate service/blog page |
-| `/private-jet-dogs/` | Pet-Friendly Private Jets: Fly with Your Dog / dog flight gallery | Gallery/showcase |
-| `/can-i-take-my-dog-on-a-private-jet/` | Can I take my dog on a private jet? | Q&A blog post |
+### 2.2 Title tag and meta description
+- Title `Private Jet Pet Flights Charter-A Ltd`: no separator before the brand, and "pet flights" is not the money term — the whole market titles on **pet friendly private jet charter** (VistaJet, K9 Jets, Mercury, Global Charter, PrivateFly). No UK signal either. (The ▷/► symbols seen in SERPs live in image `title` attributes and other pages' titles — e.g. every image on this page is titled "… ► Charter-A Ltd" — worth cleaning up site-wide, but the live page title itself is symbol-free.)
+- Meta description is an auto-truncated copy dump ending mid-sentence. Write a real one (~155 chars) with the keyword and a reason to click.
+- **Recommended title:** `Pet Friendly Private Jet Charter | Fly With Your Dog in the Cabin | Charter-A`
+- Set the AIOSEO focus keyphrase to `pet friendly private jet charter` (currently empty).
 
-Google has four candidate pages for "pet + private jet" queries and no clear signal which one to rank. **Fix (in order of impact):**
+### 2.3 Duplicate H1/H2 and broken heading hierarchy
+The banner renders the H1 and then repeats the identical text as an H2; the body then uses H5s for its two real sections. Replace with the H2/H3 structure in `03-pet-travel-page-content.html` — every heading there carries a query ("Flying pets into the UK", "What does it cost…", FAQ questions).
 
-1. Crown `/private-jet-charter/pet-travel/` as the single **pillar money page** (the deliverable in `03-pet-travel-page-content.html`).
-2. `/pet-flights/` — 301 redirect to the pillar, **or** strip its commercial copy and rewrite as a niche supporting piece. Its "Travel in 2025" title is also a stale-freshness signal in 2026.
-3. `/private-jet-dogs/` — keep as a photo gallery (great trust content), but retitle to "Dogs on Board: Charter-A Pet Flight Gallery", remove competing commercial copy, and link up to the pillar with the anchor *pet friendly private jet charter*.
-4. `/can-i-take-my-dog-on-a-private-jet/` — keep as a long-tail question post; add a prominent link to the pillar in the first paragraph and align its internal links.
-5. New supporting article "Flying Pets into the UK by Private Jet" (deliverable `04-…`) links to the pillar with exact-match anchor, building a hub-and-spoke cluster instead of four rivals.
+### 2.4 Copy quality and accuracy
+Verified issues in the live text:
+- Typos/broken fragments: "The rules for flying your **per** by private jet**]**", "your off out of the airport" (→ you're), "…and your pets.**Benefits** of flying…" (a heading collapsed into a paragraph, no space).
+- "COVID19" bullets date the page to 2020.
+- Rabies timing is phrased as "22 days before entering the UK" — GOV.UK's rule is a **21-day wait after vaccination** before travel; say it the official way.
+- The EU section states an AHC must contain "confirmation of a serological test for rabies antibodies" — a rabies titre test is **not** required for GB→EU travel; it applies only to certain third-country routes. Overstating it will scare off bookers. (The later "may be required depending on your destination" line is the correct framing.)
+- What the page gets right and should keep: AHC and GB pet health certificate both mentioned, tapeworm 24–120h with praziquantel, the Finland/Ireland/NI/Norway/Malta tapeworm exemption, good GOV.UK/DEFRA external links, decent image alt text.
 
-### 2.3 Compliance content is thin and partly outdated ⚠
-The indexed copy leads with the EU pet passport ("issued in GB before 1 January 2021") and stops there. Missing, and expected by both users and Google for this query class:
+### 2.5 Missing content and conversion elements
+Confirmed absent from the live page: FAQ section + FAQPage schema, Service schema, named UK pet-arrival airports (Biggin Hill, Farnborough, Luton, Oxford, Manchester), any pricing guidance, route examples, and a visible quote CTA. All included in the replacement copy (file 03).
 
-- The **Animal Health Certificate (AHC)** route — the standard post-Brexit document for GB-based pets travelling to the EU and back.
-- The **GB pet health certificate** for entries from non-EU countries.
-- The **tapeworm rule for dogs**: vet-administered praziquantel treatment **24 hours to 5 days (120 hours)** before arrival in GB.
-- The **21-day wait** after rabies vaccination stated for GB entry (currently only framed for the EU direction).
-- Named **arrival airports for pets by private charter** (e.g. Biggin Hill — with the SkyPets reception team Charter-A already uses — Farnborough, Luton, Oxford, Manchester). Naming them wins the "which UK airports accept pets private jet" long tail no one owns well.
-- Note to monitor: the 2025 UK–EU SPS agreement is expected to reintroduce UK pet passports; when implemented the page that updates fastest wins the news-driven searches.
+### 2.6 Technical/site-level flags (seen in page source)
+- **Two Google Tag Manager containers** fire on every page (GTM-KFHZWX and GTM-W9G7JP) — likely double-counting analytics; consolidate to one.
+- **Two different `google-site-verification` codes** and two Organization schemas with conflicting phone numbers/emails — keep one of each, matching the real NAP.
+- A **"404 redirect to homepage" plugin** is active and reports ~50K redirects this month (733K all-time). Blanket-redirecting 404s to the homepage creates soft-404s that Google ignores or penalises, and it hides real broken-link problems. Review the 404 log, add targeted 301s for URLs with equity, and let genuine junk return 404/410.
+- `og:type` is `activity` (non-standard) — use `website` (or `article` on posts).
+- Republish the page after the content update so `dateModified` finally moves off 2022.
 
-### 2.4 Structure and conversion gaps
-- **No FAQ section / FAQPage schema** — competitors win People-Also-Ask real estate here.
-- **No Service schema** tying the page to the organisation.
-- **No pricing guidance section** — "how much does it cost to fly a dog by private jet" is a high-intent query the page never answers, even in ranges.
-- **No route examples** (London–Nice, London–Dubai, US–UK relocations) to catch route-modified searches.
-- ⚠ Verify on the live page: single clear CTA above the fold, image `alt` text using pet keywords, and internal links from the site's highest-authority pages (homepage, /private-jet-charter/) into this page with descriptive anchors.
-
-## 3. Domain-level quick wins
-- Add a "Pet Friendly Charter" link to the main navigation or the /private-jet-charter/ hub — the money page currently relies on deep discovery.
-- Destination pages (Nice, Cannes, Faro, Geneva…) should each carry one line + link: "Travelling with a dog? See our pet friendly private jet charter service."
-- Refresh "Travel in 2025"-style titles across the domain; they now signal staleness.
-- Biggin Hill airport page already mentions SkyPets — cross-link it to the pillar both ways.
-
-## 4. Priority order
-1. Rewrite title/meta + publish expanded pillar content (file 03).
-2. Resolve cannibalization (301 `/pet-flights/`, retitle gallery, realign internal links).
-3. Publish the UK-inbound article (file 04) and interlink.
-4. Add FAQPage + Service schema (included in file 03).
-5. Domain-wide internal links from destination pages.
+## 3. Priority order
+1. Publish the rewritten pillar content + new title/meta/focus keyphrase (file 03) — republishing also refreshes dateModified.
+2. **Repoint the nav item and footer "FLY WITH YOUR PET" button to `/private-jet-charter/pet-travel/`**, then 301 `/pet-flights/` to it.
+3. Publish the UK-inbound supporting article (file 04) and interlink.
+4. Add FAQPage + Service schema (in file 03); remove the duplicate Organization snippet.
+5. Replace the GIF hero with WebP/JPG; strip ► from image title attributes.
+6. Consolidate GTM containers and verification codes; review the 404-redirect plugin's behaviour.
